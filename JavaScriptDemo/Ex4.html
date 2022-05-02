@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>JavaScipt Function</h1>
+	<p id="p1">
+	This is a paragraph.
+	</p>
+	<input type="button" onclick="show()" value="Show">
+	<script>
+		function show(){
+			//alert("show() is called");
+			x=prompt("Enter value 1")
+			y=prompt("Enter value 1")
+			confirm("Do you wish to continue?")
+			result=calculate(x,y);
+			document.getElementById("p1").innerHTML="Result="+result;
+		}
+		function calculate(a,b){
+			var result=a*b;
+			return result;
+		}
+	</script>
+</body>
+</html>

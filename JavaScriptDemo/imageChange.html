@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+<script type="text/javascript">
+   var flag=true;
+  
+    function changeImage(){
+    	
+    	if(flag==true){
+    		
+    		var x= document.getElementById("ximg");
+    		x.src="man2.gif";
+    		flag=false;
+    		
+    	}else{
+    		var x= document.getElementById("ximg");
+    		x.src="man1.gif";
+    		flag=true;
+    		
+    	}
+    	
+    }
+
+</script>
+</head>
+
+<body>
+
+<img alt="inage not available" id="ximg" src="man1.gif" height="100px" width="100">
+
+<input type="button" value="OK" onClick="changeImage()">
+
+</body>
+</html>

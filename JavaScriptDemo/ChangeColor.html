@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <script>
+                function changeColor(){
+                
+                   var pArr=document.getElementsByTagName("p");
+                   alert(pArr[0].innerHTML);
+                   pArr[0].style.backgroundColor="yellow";
+                   pArr[1].style.backgroundColor="red";
+                   
+                }
+                
+                function change(){
+                	
+                	alert("clicked");
+                   	var arr=document.getElementsByTagName("BODY");
+                	arr[0].style.backgroundColor="pink";
+                	
+                }
+  </script>
+
+
+</head>
+<body onClick="change()">
+
+
+<p>This is first paragraph. It is for the color test</p>
+<p>This is second paragraph. It is also for the color test</p>
+
+<input type="button" value="Change Color" onClick="changeColor()">
+</body>
+</html>

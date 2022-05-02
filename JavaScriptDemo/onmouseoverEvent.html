@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<script>
+  function changeColor(dv){
+	   dv.style.backgroundColor="red";
+  }
+  function revertChange(dv){
+	   dv.style.backgroundColor="white";
+ }
+
+</script>
+<body>
+
+<div onmouseover="changeColor(this)" onmouseout="revertChange(this)">
+
+  This is first dive tag
+
+</div>
+
+</body>
+</html>

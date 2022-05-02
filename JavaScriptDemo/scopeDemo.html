@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script>
+     num1=10;
+
+    function test1(){
+    	var x=100;//local
+    	document.write("in test1() "+num1+"<Br>");
+    	document.write("in test1() "+x+"<Br>");
+         name="Anita"; //global
+    	document.write("in test1() "+name+"<Br>");
+    }
+    function test2(){
+    	document.write("in test2() "+num1+"<Br>");
+    	//document.write("in test2() "+x+"<Br>");
+    	document.write("in test2() "+name+"<Br>");
+    }
+test1();
+test2();
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

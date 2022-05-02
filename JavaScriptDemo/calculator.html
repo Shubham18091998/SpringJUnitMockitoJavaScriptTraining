@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculator</title>
+<script>
+	function calculate(v){
+		alert(v.value);
+		var a=parseInt(document.getElementById("num1").value);
+		var b=parseInt(document.getElementById("num2").value);
+		var result;
+		if(v.value=="Add"){
+			result=a+b;
+		}
+		else if(v.value=="Subtract"){
+			result=a-b;
+		}
+		else if(v.value=="Multiply"){
+			result=a*b;
+		}
+		else if(v.value=="Divide"){
+			result=a/b;
+		}
+		document.getElementById("res").value=result;
+	}
+	
+</script>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Number 1</td>
+				<td><input type="text" name="num1" id="num1"/></td>
+			</tr>
+			<tr>
+				<td>Number 2</td>
+				<td><input type="text" name="num2" id="num2"/></td>
+			</tr>
+			<tr>
+				<td>Result</td>
+				<td><input type="text" name="res" id="res"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Add" onClick="calculate(this)"/></td>
+				<td><input type="button" value="Subtract" onClick="calculate(this)"/></td>
+				<td><input type="button" value="Multiply" onClick="calculate(this)"/></td>
+				<td><input type="button" value="Divide" onClick="calculate(this)"/></td>
+				<td><input type="reset" value="Reset"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
